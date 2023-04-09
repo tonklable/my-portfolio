@@ -4,12 +4,14 @@ import Card from '../components/card.js';
 import Link from 'next/link';
 import profilePic from 'public/img/Myself.JPG'
 import resume from 'public/img/resume 2.png'
+import { motion, AnimatePresence } from "framer-motion";
 
 
 export default function Home() {
   return (
-    <div>
-      <div className="container flex justify-start items-center min-h-[92.5vh] px-8 mx-auto transition-{min-height} duration-500 ease-in-out	delay-0	">
+    <motion.div layout
+      transition={{ type: "spring" }}>
+      <div className="container flex justify-start items-center min-h-[92.5vh] px-8 mx-auto	">
         <div className="max-w-full">
           <div className="p-2 md:p-10 space-y-5">
             <h1 className="text-4xl lg:text-6xl text-left font-bold text-black font-sans leading-tight">
@@ -54,6 +56,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
