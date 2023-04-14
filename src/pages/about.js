@@ -1,10 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import profilePic from 'public/img/Myself.JPG'
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function About() {
     return (
-        <div>
+
+        <motion.div layout
+            transition={{ type: "spring" }}>
             <Head>
                 <title>About</title>
             </Head>
@@ -29,6 +32,6 @@ export default function About() {
 
                 </div>
             </div>
-        </div>
+        </motion.div >
     )
 }

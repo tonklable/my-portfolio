@@ -2,12 +2,22 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Card from '../components/card.js';
 import Link from 'next/link';
-import profilePic from 'public/img/Myself.JPG'
-import resume from 'public/img/resume 2.png'
+import profilePic from 'src/public/img/Myself.JPG'
+import resume from 'src/public/img/resume 2.png'
 import { motion, AnimatePresence } from "framer-motion";
+import { getSortedPostsData } from '../lib/posts';
+import Date from '../components/date';
 
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    },
+  };
+}
 
-export default function Home() {
+export default function Home({ allPostsData }) {
   return (
     <motion.div layout
       transition={{ type: "spring" }}>
@@ -55,6 +65,20 @@ export default function Home() {
 
           </div>
         </div>
+        <section className="">
+          <h2 className="">Blog</h2>
+          <ul className="">
+            {allPostsData.map(({ id, date, title }) => (
+              <li className="" key={id}>
+                <Link href={`/posts/${id}`}>{title}</Link>
+                <br />
+                <small className="">
+                  <Date dateString={date} />
+                </small>
+              </li>
+            ))}
+          </ul>
+        </section>
       </div>
     </motion.div>
   )

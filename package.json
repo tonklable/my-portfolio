@@ -11,12 +11,16 @@
   "dependencies": {
     "@fontsource/poppins": "^4.5.10",
     "@fontsource/roboto-slab": "^4.5.11",
+    "date-fns": "^2.29.3",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
     "framer-motion": "^10.11.2",
+    "gray-matter": "^4.0.3",
     "next": "13.2.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "remark": "^14.0.2",
+    "remark-html": "^15.0.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
