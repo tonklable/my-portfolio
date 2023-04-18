@@ -66,15 +66,21 @@ export default function Home({ allPostsData }) {
           </div>
         </div>
         <section className="">
-          <h2 className="">Blog</h2>
-          <ul className="">
+          <h2 className="text-xl lg:text-3xl text-center font-bold text-black font-sans leading-tight">Projects</h2>
+          <ul className="md:columns-3 space-y-8 md:space-y-0">
             {allPostsData.map(({ id, date, title }) => (
               <li className="" key={id}>
-                <Link href={`/posts/${id}`}>{title}</Link>
+                <Link href={`/posts/${id}`}>
+                  <Card
+                    imageUrl={resume}
+                    title={title}
+                    subtitle={date}
+                  />
+                </Link>
                 <br />
-                <small className="">
+                {/* <small className="">
                   <Date dateString={date} />
-                </small>
+                </small> */}
               </li>
             ))}
           </ul>
