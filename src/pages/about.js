@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import profilePic from 'public/img/Myself.JPG'
+import profilePic from 'src/public/img/myself.png'
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function About() {
