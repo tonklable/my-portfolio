@@ -1,5 +1,5 @@
 import Navbar from './navbar'
-// import Footer from './footer'
+import Footer from './footer'
 import { motion, AnimatePresence } from "framer-motion";
 import React, { useState } from 'react';
 
@@ -17,7 +17,7 @@ export default function Layout({ children }) {
             <main>
                 {childrenWithProps}
             </main>
-            {/* <Footer /> */}
+            <Footer />
         </>
     )
 }

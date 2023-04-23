@@ -27,6 +27,7 @@ module.exports = {
       'gray-dark': '#273444',
       'gray': '#8492a6',
       'gray-light': '#d3dce6',
+      'white': '#FFFFFF'
     },
     fontFamily: {
       'sans': ['Poppins', 'sans-serif'],
@@ -39,6 +40,9 @@ module.exports = {
       },
       borderRadius: {
         '4xl': '2rem',
+      },
+      aspectRatio: {
+        '16/9': '56.25%',
       },
     },
   },

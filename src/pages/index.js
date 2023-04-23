@@ -41,7 +41,7 @@ export default function Home({ allPostsData }) {
 
         <div className="container mx-auto p-2 md:p-4">
           <div className="md:columns-2 space-y-8 md:space-y-0">
-            <div>
+            {/* <div>
               <Link href="/about">
                 <Card
                   imageUrl={'/img/16-9.jpg'}
@@ -49,7 +49,7 @@ export default function Home({ allPostsData }) {
                   subtitle="Get to know me more"
                 />
               </Link>
-            </div>
+            </div> */}
             <div>
               <Link href="/resume">
                 <Card
@@ -63,17 +63,17 @@ export default function Home({ allPostsData }) {
           </div>
         </div>
         <br />
-        <section className="">
+        <section className="p-2 md:p-4">
           <h2 className="text-xl lg:text-3xl text-center font-bold text-black font-sans leading-tight">Projects</h2>
           <br />
           <ul className="md:columns-3 space-y-8 md:space-y-0">
-            {allPostsData.map(({ id, date, title, bannersrc }) => (
+            {allPostsData.map(({ id, subtitle, title, bannersrc }) => (
               <li className="" key={id}>
                 <Link href={`/posts/${id}`}>
                   <Card
                     imageUrl={bannersrc}
                     title={title}
-                    subtitle={date}
+                    subtitle={subtitle}
                   />
                 </Link>
                 <br />

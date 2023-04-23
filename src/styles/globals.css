@@ -3,3 +3,77 @@
 @tailwind utilities;
 @import '@fontsource/poppins';
 @import '@fontsource/roboto-slab';
+
+/* Add your responsive scoped styles to globals.css */
+.markdown-content {
+    @apply text-base;
+}
+
+.markdown-content h1 {
+    @apply text-2xl font-bold my-4;
+}
+
+.markdown-content h2 {
+    @apply text-xl font-semibold my-3;
+}
+
+.markdown-content h3 {
+    @apply text-lg font-semibold my-2;
+}
+
+.markdown-content p {
+    @apply my-2 font-serif;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+    @apply list-disc list-outside pl-6;
+}
+
+.markdown-content li {
+    @apply my-1;
+}
+
+.markdown-content strong,
+.markdown-content b {
+    @apply bg-main bg-opacity-40;
+}
+
+.markdown-content em,
+.markdown-content i {
+    @apply italic;
+}
+
+.markdown-content del,
+.markdown-content s {
+    @apply line-through;
+}
+
+/* Responsive styles */
+@media (min-width: 640px) {
+    .markdown-content h1 {
+        @apply text-3xl;
+    }
+
+    .markdown-content h2 {
+        @apply text-2xl;
+    }
+
+    .markdown-content h3 {
+        @apply text-xl;
+    }
+}
+
+@media (min-width: 768px) {
+    .markdown-content h1 {
+        @apply text-4xl;
+    }
+
+    .markdown-content h2 {
+        @apply text-3xl;
+    }
+
+    .markdown-content h3 {
+        @apply text-2xl;
+    }
+}
