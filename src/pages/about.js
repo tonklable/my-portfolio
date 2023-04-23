@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import profilePic from 'src/public/img/myself.png'
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function About() {
@@ -19,7 +18,7 @@ export default function About() {
                     <article>
                         <div className='flex'>
                             <div className="mb-5 md:w-1/3">
-                                <Image objectFit='cover' src={profilePic} />
+                                <Image objectFit='contain' layout='fill' src={'/img/myself.png'} />
                                 <div>
                                     <h1 className="text-lg lg:text-2xl text-left font-bold text-black font-sans leading-tight mt-16 mb-8 outline-none">
                                         Contact

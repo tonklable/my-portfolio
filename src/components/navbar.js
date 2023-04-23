@@ -15,12 +15,12 @@ export default function Navbar(props) {
                     <Link href="/" className="text-black font-sans font-bold hover:text-main transition-colors pt-5 pb-4">
                         Home
                     </Link>
-                    <Link href="/about" className="text-black font-sans font-bold hover:text-main transition-colors pt-5 pb-4">
+                    {/* <Link href="/about" className="text-black font-sans font-bold hover:text-main transition-colors pt-5 pb-4">
                         About
-                    </Link>
-                    <Link href="/work" className="text-black font-sans font-bold hover:text-main transition-colors pt-5 pb-4">
+                    </Link> */}
+                    {/* <Link href="/work" className="text-black font-sans font-bold hover:text-main transition-colors pt-5 pb-4">
                         Work
-                    </Link>
+                    </Link> */}
                     <Link href="/resume" className="text-black font-sans font-bold hover:text-main transition-colors pt-5 pb-4">
                         Resume
                     </Link>
@@ -63,12 +63,12 @@ export default function Navbar(props) {
                                 <Link href="/" className="text-black font-sans font-bold hover:text-main transition-colors pt-5 pb-4">
                                     Home
                                 </Link>
-                                <Link href="/about" className="text-black font-sans font-bold hover:text-main transition-colors pt-5 pb-4">
+                                {/* <Link href="/about" className="text-black font-sans font-bold hover:text-main transition-colors pt-5 pb-4">
                                     About
-                                </Link>
-                                <Link href="/work" className="text-black font-sans font-bold hover:text-main transition-colors pt-5 pb-4">
+                                </Link> */}
+                                {/* <Link href="/work" className="text-black font-sans font-bold hover:text-main transition-colors pt-5 pb-4">
                                     Work
-                                </Link>
+                                </Link> */}
                                 <Link href="/resume" className="text-black font-sans font-bold hover:text-main transition-colors pt-5 pb-4">
                                     Resume
                                 </Link>

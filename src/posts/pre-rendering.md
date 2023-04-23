@@ -1,11 +1,12 @@
 ---
 title: 'Two Forms of Pre-rendering'
 date: '2022-01-01'
+bannersrc: '/img/Banner_ReFoodable.png'
+bannergradientsrc: '/img/Banner with gradient_ReFoodable.png'
 ---
 
-Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
+# Introduction
+17% of global food production went into waste bins and 39% of this food waste comes from food service and retail. Leftover food contributes a part of overall food waste in the world. Goal 12 from sustainable development goals (SDGs) aims to ensure sustainable consumption and production patterns. On target 12.3, they aim to cut half per capita global food waste by 2030 at the retail and consumer levels and reduce food losses along production and supply chains, including post-harvest losses. ReFoodable aims to reduce leftover food from stores, restaurants, and supermarkets at the end of the day according to the target 12.3 of SDGs. We utilized Google technology including Flutter, Firebase and Google Map Platform.
 
-- **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
-- **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.
-
-Importantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
+# Details
+17% of global food production went into waste bins and 39% of this food waste comes from food service and retail. Leftover food contributes a part of overall food waste in the world. Goal 12 from sustainable development goals (SDGs) aims to ensure sustainable consumption and production patterns. On target 12.3, they aim to cut half per capita global food waste by 2030 at the retail and consumer levels and reduce food losses along production and supply chains, including post-harvest losses. ReFoodable aims to reduce leftover food from stores, restaurants, and supermarkets at the end of the day according to the target 12.3 of SDGs. We utilized Google technology including Flutter, Firebase and Google Map Platform.

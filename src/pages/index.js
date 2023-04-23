@@ -1,9 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Card from '../components/card.js';
 import Link from 'next/link';
-import profilePic from 'src/public/img/16-9.jpg'
-import resume from 'src/public/img/Resume_Mercari_SE.png'
 import { motion, AnimatePresence } from "framer-motion";
 import { getSortedPostsData } from '../lib/posts';
 import Date from '../components/date';
@@ -47,7 +44,7 @@ export default function Home({ allPostsData }) {
             <div>
               <Link href="/about">
                 <Card
-                  imageUrl={profilePic}
+                  imageUrl={'/img/16-9.jpg'}
                   title="About Me 👨‍💻"
                   subtitle="Get to know me more"
                 />
@@ -56,7 +53,7 @@ export default function Home({ allPostsData }) {
             <div>
               <Link href="/resume">
                 <Card
-                  imageUrl={resume}
+                  imageUrl={'/img/Resume_Mercari_SE.png'}
                   title="Resume 🗎"
                   subtitle="Download my resume"
                 />
@@ -70,11 +67,11 @@ export default function Home({ allPostsData }) {
           <h2 className="text-xl lg:text-3xl text-center font-bold text-black font-sans leading-tight">Projects</h2>
           <br />
           <ul className="md:columns-3 space-y-8 md:space-y-0">
-            {allPostsData.map(({ id, date, title }) => (
+            {allPostsData.map(({ id, date, title, bannersrc }) => (
               <li className="" key={id}>
                 <Link href={`/posts/${id}`}>
                   <Card
-                    imageUrl={resume}
+                    imageUrl={bannersrc}
                     title={title}
                     subtitle={date}
                   />
