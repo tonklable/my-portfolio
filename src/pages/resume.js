@@ -19,8 +19,8 @@ export default function Resume() {
                         <Image src={'/img/Resume_Mercari_SE.png'} className='max-w-xs md:max-w-md lg:max-w-2xl' layout="responsive" width="90" height="160" alt="Resume" />
                         <div className="absolute inset-0 bg-black opacity-25"></div>
                     </div>
-                    <div className="col-span-1 order-1 flex flex-col mx-auto md:ml-0 h-full bg-gray-100">
-                        <a href="/Resume_Mercari_SE.pdf" download className="my-4 md:my-0 py-2 px-4 bg-main text-white md:font-semibold rounded-lg shadow-md ">
+                    <div className="col-span-1 order-1 flex flex-col mx-auto md:ml-0 h-full items-center md:items-start z-10">
+                        <a href="/Resume_Mercari_SE.pdf" download className="my-4 md:my-0 py-2 px-4 bg-main text-white hover:bg-main-hover transition-colors duration-300 ease-in-out font-semibold rounded-lg shadow-md">
                             Download (.pdf)
                         </a>
                     </div>

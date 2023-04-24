@@ -18,6 +18,7 @@ module.exports = {
     },
     colors: {
       'main': '#DF2323',
+      'main-hover': '#A32222',
       'blue': '#1fb6ff',
       'purple': '#7e5bef',
       'pink': '#ff49db',
