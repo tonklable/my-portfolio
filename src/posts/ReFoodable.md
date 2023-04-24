@@ -10,6 +10,7 @@ purpose: 'Google Developer Student Clubs Solution Challenge 2023'
 bannersrc: '/img/Banner_ReFoodable.png'
 bannergradientsrc: '/img/Banner with gradient_ReFoodable.png'
 youtube: 'UtVPyPvjBGY'
+githublink: 'https://github.com/tonklable/ReFoodable'
 
 ---
 

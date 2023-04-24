@@ -28,7 +28,8 @@ module.exports = {
       'gray-dark': '#273444',
       'gray': '#8492a6',
       'gray-light': '#d3dce6',
-      'white': '#FFFFFF'
+      'white': '#FFFFFF',
+      'black': '#00000'
     },
     fontFamily: {
       'sans': ['Poppins', 'sans-serif'],

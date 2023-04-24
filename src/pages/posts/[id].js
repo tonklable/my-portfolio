@@ -8,6 +8,8 @@ import { ReactMarkdown } from 'react-markdown';
 import CircleChip from '@/components/circle_chip';
 import cheerio from 'cheerio';
 import YouTube from 'react-youtube';
+import LinkChip from '@/components/chips_button.js';
+import ReactEmbed from 'react-embed';
 
 const extractH2 = (html) => {
     const $ = cheerio.load(html);
@@ -67,9 +69,9 @@ export default function Post({ postData }) {
                         objectPosition="center"
 
                         alt={postData.title} />
-                    <div className="absolute top-1/2 lg:left-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-left">
+                    <div className="absolute top-1/2 lg:left-1/4 left-1/2 lg:w-1/4 transform -translate-x-1/2 -translate-y-1/2 text-left">
                         <h1 className="text-5xl sm:text-6xl text-main font-bold">{postData.title}</h1>
-                        <p className="text-3xl sm:text-4xl text-white">{postData.subtitle}</p>
+                        <p className="text-3xl mt-4 sm:text-4xl text-white">{postData.subtitle}</p>
                         <p className="text-xl sm:text-1xl pt-2 text-gray-light">{postData.duration}</p>
                         <div className='my-5 flex-wrap'>
                             <CircleChip tag={postData.tag} />
@@ -92,31 +94,44 @@ export default function Post({ postData }) {
                                 {postData.purpose}
                             </p>
                         </div>
+                        <div className='py-4'>
+                            {postData.githublink && <LinkChip name={'View Code on Github 🔗'} link={postData.githublink} />}
+                        </div>
 
                     </div>
-                    <div className='hidden lg:block absolute top-1/2 md:right-1/4 right-1/2 transform translate-x-1/2 -translate-y-1/2 w-1/3 h-1/3'>
-                        {postData.youtube && <iframe
+                    {postData.iframe && <div className='hidden lg:block absolute top-1/2 md:right-1/4 right-1/2 transform translate-x-1/2 -translate-y-1/2 w-1/3 h-1/3 z-30'>
+                        <iframe src="https://www.canva.com/design/DAFRyqTQe1g/view?embed&meta" className='absolute top-0 left-0 w-full h-full border-0' allowfullscreen></iframe>
+
+                    </div>}
+
+
+                    {postData.youtube && <div className='hidden lg:block absolute top-1/2 md:right-1/4 right-1/2 transform translate-x-1/2 -translate-y-1/2 w-1/3 h-1/3'>
+                        <iframe
                             className="inset-0 w-full h-full"
                             src={videoSrc}
                             title="YouTube video player"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
-                        ></iframe>}
-                    </div>
+                        ></iframe>
+                    </div>}
 
                 </div>
                 <div className='flex flex-col mx-auto px-8 lg:px-24 md:py-8'>
-                    <div className="lg:hidden relative pt-[56.25%] md:pt-[50%] lg:pt-[42.86%]">
-                        {postData.youtube && <iframe
+                    {postData.iframe && <div className='lg:hidden relative pt-[56.25%] md:pt-[50%] lg:pt-[42.86%]'>
+                        <iframe src="https://www.canva.com/design/DAFRyqTQe1g/view?embed&meta" className='absolute top-0 left-0 w-full h-full border-0' allowfullscreen></iframe>
+
+                    </div>}
+                    {postData.youtube && <div className="lg:hidden relative pt-[56.25%] md:pt-[50%] lg:pt-[42.86%]">
+                        <iframe
                             className="absolute inset-0 w-full h-full"
                             src={videoSrc}
                             title="YouTube video player"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
-                        ></iframe>}
-                    </div>
+                        ></iframe>
+                    </div>}
                     <div class="md:grid md:grid-cols-4 md:gap-8 sm:mt-4 mx-auto">
                         <div class="col-span-1">
                             <H2Table h2List={h2List} />

@@ -63,10 +63,10 @@ export default function Home({ allPostsData }) {
           </div>
         </div>
         <br />
-        <section className="p-2 md:p-4">
-          <h2 className="text-xl lg:text-3xl text-center font-bold text-black font-sans leading-tight">Projects</h2>
+        <section className="container p-2 md:p-4 mx-auto">
+          <h2 className="text-xl lg:text-3xl text-center font-bold text-black font-sans leading-tight">Projects 💼</h2>
           <br />
-          <ul className="md:columns-3 space-y-8 md:space-y-0">
+          <ul className="md:columns-3 space-y-0">
             {allPostsData.map(({ id, subtitle, title, bannersrc }) => (
               <li className="" key={id}>
                 <Link href={`/posts/${id}`}>

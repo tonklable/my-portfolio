@@ -22,7 +22,7 @@
 }
 
 .markdown-content p {
-    @apply my-2 font-serif;
+    @apply mt-2 mb-8 font-serif;
 }
 
 .markdown-content ul,
@@ -47,6 +47,10 @@
 .markdown-content del,
 .markdown-content s {
     @apply line-through;
+}
+
+.markdown-content img {
+    @apply m-auto;
 }
 
 /* Responsive styles */
