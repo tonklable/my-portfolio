@@ -12,7 +12,7 @@ export default function Resume() {
             </Head>
             <div className='relative w-screen h-auto mx-auto'>
                 <h1 className="text-xl lg:text-3xl text-left md:my-8 font-bold text-black font-sans leading-tight px-8 md:px-16 mt-8">
-                    Resume 🗎
+                    Resume 📄
                 </h1>
                 <div className="grid grid-cols-1 md:grid-cols-3">
                     <div className="flex order-2 md:order-1 col-span-2 m-auto bg-white shadow-lg">
