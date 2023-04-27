@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Card({ imageUrl, title, subtitle }) {
     return (
-        <div className="bg-white shadow-md rounded-lg overflow-hidden">
+        <div className="bg-white shadow-md rounded-lg overflow-hidden hover:bg-main hover:bg-opacity-5 transition duration-200">
             <div className="relative w-full h-0 pb-[56.25%]">
                 <Image src={imageUrl} layout="fill" objectFit="cover" objectPosition='top' alt={title} />
             </div>

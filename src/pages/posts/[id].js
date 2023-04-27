@@ -104,9 +104,6 @@ export default function Post({ postData }) {
                     {postData.iframe && <div className='hidden lg:block absolute top-1/2 md:right-1/4 right-1/2 transform translate-x-1/2 -translate-y-1/2 w-1/3 h-1/3 z-30'>
                         <iframe src={postData.iframe} className='absolute top-0 left-0 w-full h-full border-0' allowfullscreen></iframe>
                     </div>}
-                    {postData.animation && <div className='hidden lg:block absolute top-1/2 md:right-1/4 right-1/2 transform translate-x-1/2 -translate-y-1/2 w-1/3 h-1/3 z-30'>
-                        <Animation />
-                    </div>}
 
                     {postData.youtube && <div className='hidden lg:block absolute top-1/2 md:right-1/4 right-1/2 transform translate-x-1/2 -translate-y-1/2 w-1/3 h-1/3'>
                         <iframe

@@ -11,7 +11,7 @@ bannersrc: '/img/Banner_TyTime.png'
 bannergradientsrc: '/img/Banner with gradient_TyTime.png'
 animation: 'eevee'
 githublink: 'https://github.com/tonklable/dev-2-webapp'
-draft: 'true'
+
 
 ---
 

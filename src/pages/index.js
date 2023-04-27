@@ -41,7 +41,7 @@ export default function Home({ allPostsData }) {
 
         <div className="container mx-auto p-2 md:p-4">
           <div className="md:columns-2 space-y-8 md:space-y-0">
-            {/* <div>
+            <div>
               <Link href="/about">
                 <Card
                   imageUrl={'/img/16-9.jpg'}
@@ -49,7 +49,7 @@ export default function Home({ allPostsData }) {
                   subtitle="Get to know me more"
                 />
               </Link>
-            </div> */}
+            </div>
             <div>
               <Link href="/resume">
                 <Card
