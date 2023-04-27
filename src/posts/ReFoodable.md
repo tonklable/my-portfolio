@@ -1,8 +1,8 @@
 ---
 title: 'ReFoodable'
-date: '2023-04-23'
+date: '2023-04-28'
 duration: 'Feb-Mar 2023'
-subtitle: 'Application Project'
+subtitle: 'Flutter Project'
 tag: 'Flutter,Google Technology,Firebase'
 team: 'Natprawee Pattayawij,Nutchanon Taechasuk,Supawich Jiarakul,Tetus Rattanasirimaneewate'
 tools: 'Flutter,Firebase,Google Maps Platform,Figma,Github'
@@ -13,6 +13,9 @@ youtube: 'UtVPyPvjBGY'
 githublink: 'https://github.com/tonklable/ReFoodable'
 
 ---
+
+## Description
+ReFoodable is a **Flutter** project submitted for **GDSC Solution Challenge 2023**. This project aims to reduce leftover food at the end of the day by providing service to share discounts from restaurants and supermarkets.
 
 ## Introduction
 17% of global food production went into waste bins and 39% of this food waste comes from food service and retail. Leftover food contributes a part of overall food waste in the world. Goal 12 from sustainable development goals (SDGs) aims to ensure sustainable consumption and production patterns. On target 12.3, they aim to cut half per capita global food waste by 2030 at the retail and consumer levels and reduce food losses along production and supply chains, including post-harvest losses. ReFoodable aims to reduce leftover food from stores, restaurants, and supermarkets at the end of the day according to the target 12.3 of SDGs. We utilized Google technology including Flutter, Firebase and Google Map Platform.
