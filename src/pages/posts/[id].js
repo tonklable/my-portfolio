@@ -104,7 +104,13 @@ export default function Post({ postData }) {
                     {postData.iframe && <div className='hidden lg:block absolute top-1/2 md:right-1/4 right-1/2 transform translate-x-1/2 -translate-y-1/2 w-1/3 h-1/3 z-30'>
                         <iframe src={postData.iframe} className='absolute top-0 left-0 w-full h-full border-0' allowfullscreen></iframe>
                     </div>}
-
+                    {postData.image && <div className='hidden lg:block absolute top-1/2 md:right-1/4 right-1/2 transform translate-x-1/2 -translate-y-1/2 w-1/3 h-1/3 z-30'>
+                        <Image src={postData.image}
+                            layout="fill"
+                            objectFit="contain"
+                            objectPosition="center"
+                            alt={postData.title} />
+                    </div>}
                     {postData.youtube && <div className='hidden lg:block absolute top-1/2 md:right-1/4 right-1/2 transform translate-x-1/2 -translate-y-1/2 w-1/3 h-1/3'>
                         <iframe
                             className="inset-0 w-full h-full"
@@ -121,6 +127,13 @@ export default function Post({ postData }) {
                     {postData.iframe && <div className='lg:hidden relative pt-[56.25%] md:pt-[50%] lg:pt-[42.86%]'>
                         <iframe src={postData.iframe} className='absolute top-0 left-0 w-full h-full border-0' allowfullscreen></iframe>
 
+                    </div>}
+                    {postData.image && <div className='lg:hidden relative pt-[56.25%] md:pt-[50%] lg:pt-[42.86%]'>
+                        <Image src={postData.image}
+                            layout="fill"
+                            objectFit="contain"
+                            objectPosition="center"
+                            alt={postData.title} />
                     </div>}
                     {postData.youtube && <div className="lg:hidden relative pt-[56.25%] md:pt-[50%] lg:pt-[42.86%]">
                         <iframe
