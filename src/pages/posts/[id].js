@@ -69,7 +69,8 @@ export default function Post({ postData }) {
                         layout="fill"
                         objectFit="cover"
                         objectPosition="center"
-
+                        placeholder="blur"
+                        blurDataURL="/images/Banner with gradient_blur.png"
                         alt={postData.title} />
                     <div className="absolute top-1/2 lg:left-1/4 left-1/2 lg:w-1/4 transform -translate-x-1/2 -translate-y-1/2 text-left">
                         <h1 className="text-5xl sm:text-6xl text-main font-bold">{postData.title}</h1>
