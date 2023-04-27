@@ -33,7 +33,7 @@ export default function Post({ postData }) {
             <div className='py-4 px-4 my-4 rounded-lg border-2 border-main bg-white'>
                 <h2 className="mb-4 font-bold">Contents</h2>
                 {h2List.map(({ text, id }) => (
-                    <div className="py-2">
+                    <div key={id} className="py-2">
                         <a href={`#${id}`} className="text-black transition-colors duration-300 ease-in-out hover:text-main">
                             {text}
                         </a>
@@ -48,7 +48,7 @@ export default function Post({ postData }) {
             <div>
                 {
                     members.map((member) => (
-                        <p className=" text-gray text-xs rounded-full py-0.5">
+                        <p key={member} className=" text-gray text-xs rounded-full py-0.5">
                             {member}
                         </p>
                     ))}
