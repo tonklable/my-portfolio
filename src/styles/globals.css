@@ -34,7 +34,7 @@
 }
 
 .markdown-content li {
-    @apply my-1;
+    @apply my-1 font-serif;
 }
 
 .markdown-content strong,
