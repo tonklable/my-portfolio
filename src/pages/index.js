@@ -18,6 +18,10 @@ export default function Home({ allPostsData }) {
   return (
     <motion.div layout
       transition={{ type: "spring" }}>
+      <Head>
+        <title>Natprawee Pattayawij</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="container flex justify-start items-center min-h-[92.5vh] px-8 mx-auto	">
         <div className="max-w-full">
           <div className="p-2 md:p-10 space-y-5">
