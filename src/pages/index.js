@@ -53,7 +53,7 @@ export default function Home({ allPostsData }) {
             <div>
               <Link href="/resume">
                 <Card
-                  imageUrl={'/img/Resume_Mercari_SE.png'}
+                  imageUrl={'/img/Resume_Mercari_Intern.png'}
                   title="Resume 📝"
                   subtitle="Download my resume"
                 />
