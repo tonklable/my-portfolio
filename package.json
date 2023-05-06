@@ -11,9 +11,6 @@
   "dependencies": {
     "@fontsource/poppins": "^4.5.10",
     "@fontsource/roboto-slab": "^4.5.11",
-    "@mdx-js/loader": "^2.3.0",
-    "@mdx-js/react": "^2.3.0",
-    "@next/mdx": "^13.4.1",
     "animejs": "^3.2.1",
     "cheerio": "^1.0.0-rc.12",
     "date-fns": "^2.29.3",

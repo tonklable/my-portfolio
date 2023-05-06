@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from "framer-motion";
 import { getSortedPostsData } from '../lib/posts';
 import Date from '../components/date';
+import TextAnimation from '@/components/text_animation.js';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -28,9 +29,8 @@ export default function Home({ allPostsData }) {
             <h1 className="text-4xl lg:text-6xl text-left font-bold text-black font-sans leading-tight">
               Natprawee Pattayawij (TK)
             </h1>
-            <h2 className="text-xl lg:text-4xl text-left font-bold text-main font-sans ">
-              Front-End Developer 🖥️ / Aspiring Product Manager 📱
-            </h2>
+            <TextAnimation />
+
             <ul className="text-xs md:text-lg list-disc list-inside font-sans font-medium text-gray">
               <li>4th-year engineering student at Tokyo Institute of Technology</li>
               <li>Doing research in user experience of disaster prevention application in Japan</li>
