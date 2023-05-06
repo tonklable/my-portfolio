@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function TextAnimation() {
     const texts = ['Front-End Developer', 'Aspiring Product Manager']
-    const emojis = [<p>🖥️</p>, <p>📱</p>]
+    const emojis = [<p key="computer">🖥️</p>, <p key="mobile">📱</p>]
     const letter = {
         hidden: { opacity: 0 },
         visible: {
