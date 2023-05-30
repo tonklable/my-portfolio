@@ -10,7 +10,7 @@ purpose: 'Build@Mercari 2023'
 bannersrc: '/img/Banner_mercari.png'
 bannergradientsrc: '/img/Banner with gradient_mercari.png'
 iframe: 'https://docs.google.com/presentation/d/e/2PACX-1vQHbm7YjdS6cTiH98Lcb1_mZu9EUxGB5iiq0tCPLRNwOnJKgTRqzjil1stk4-0nNAHt2SBBUzWMGHou/embed?start=false&loop=false&delayms=3000'
-githublink: 'https://github.com/tonklable/ReFoodable'
+githublink: 'https://github.com/iggyray/mercari-build-hackathon-2023'
 
 ---
 
