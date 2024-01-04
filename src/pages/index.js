@@ -48,7 +48,7 @@ export default function Home({ allPostsData }) {
             <div>
               <Link href="/about">
                 <Card
-                  imageUrl={'/img/16-9.jpg'}
+                  imageUrl={'/img/16-9.png'}
                   title="About Me 👨‍💻"
                   subtitle="Get to know me more"
                 />

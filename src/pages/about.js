@@ -58,7 +58,7 @@ export default function About() {
                                     I was awarded the <b className='bg-main bg-opacity-40'>AEON 1% Club Scholarship</b> for a full tuition fee and monthly stipend support.
                                 </p>
                                 <p className='font-serif text-sm md:text-md my-4'>
-                                    I am doing an internship as a <b className='bg-main bg-opacity-40'>product management associate</b> at Tofu Inc. Tofu Inc is a newly established startup doing an EOR and payroll platform for BPOs including GoGlobal. We are integrating payroll and EOR services with AI. I contributed to product tutorial documentation, data migration, implementation of service and writing user stories.
+                                    I was an intern in <b className='bg-main bg-opacity-40'>website frontend team at Mercari Inc.</b>  for two months. From this intern, I learned a lot about webapp development using Next.js and TypeScript. I am doing an internship as a <b className='bg-main bg-opacity-40'>product management associate</b> at Tofu, Inc. Tofu, Inc. is a newly established startup doing an EOR and payroll platform for BPOs including GoGlobal. We are integrating payroll and EOR services with AI. I contributed to product tutorial documentation, data migration, implementation of service and writing user stories.
                                 </p>
                             </div>
                         </div>
